@@ -19,10 +19,8 @@ public class TestsOne {
 
     @Test
     public void CreateEvent() {
-
         String google_expected = "https://www.google.co.uk/?gws_rd=ssl";
         String google_actual = (driver.getCurrentUrl().toString());
-
         String amazon_expected = "https://www.google.co.uk/?gws_rd=ssl";
         String amazon_actual = (driver.getCurrentUrl().toString());
 
