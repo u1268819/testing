@@ -26,6 +26,7 @@ public class TestsOne {
         System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+        System.out.print("Should be only in the feature branch");
     }
 
     @Test
