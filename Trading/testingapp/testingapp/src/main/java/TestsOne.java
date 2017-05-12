@@ -19,10 +19,18 @@ public class TestsOne {
 
     @Test
     public void CreateEvent() {
+
+        String google_expected = "https://www.google.co.uk/?gws_rd=ssl";
+        String google_actual = (driver.getCurrentUrl().toString());
+
+        String amazon_expected = "https://www.google.co.uk/?gws_rd=ssl";
+        String amazon_actual = (driver.getCurrentUrl().toString());
+
         GoToGoogle();
-        String expected = "https://www.google.co.uk/?gws_rd=ssl";
-        String actual = (driver.getCurrentUrl().toString());
-        Assert.assertEquals(expected, actual);
+        GoToAmazon();
+
+        Assert.assertEquals(google_expected, google_actual);
+        Assert.assertEquals(amazon_expected, amazon_actual);
     }
 
     @AfterClass
@@ -41,5 +49,7 @@ public class TestsOne {
         driver.navigate().to("http://www.google.co.uk");
     }
 
-
+    private void GoToAmazon(){
+        driver.navigate().to("http://www.amazon.co.uk");
+    }
 }
