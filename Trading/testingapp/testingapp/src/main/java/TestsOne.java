@@ -1,17 +1,9 @@
-import com.sun.xml.internal.bind.v2.TODO;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
-
-import javax.swing.*;
-import java.util.List;
 
 /**
  * Created by rtaylor on 09/05/2017.
